@@ -1,0 +1,208 @@
+.container{
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profileContainer{
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.profile{
+    flex: 70%;
+    padding-left: 3.5rem;
+    padding-bottom: 3.5rem
+}
+
+.profile .profileHeading{
+    width: 100%;
+}
+
+.profile .profileHeading h1{
+    color: var(--merch);
+    font-weight: bold;
+}
+
+.profile .profileHeading button{
+    padding: 0.5rem 0.6rem;
+    background-color: var(--merch);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.2rem;
+}
+
+.profile .profileHeading a{
+    
+    position: absolute;
+    left: 17rem;
+    top: 9.4rem
+}
+
+.profile .bio{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem; 
+}
+
+.profile .bio .bioImage img{
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.profile .bio .bioData{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem
+}
+
+.profile .bio .bioData h1{
+    color: var(--merch);
+    font-weight: bold;
+    font-size: 2rem
+}
+
+.profile .bio .bioData p{
+    color: white;
+    font-size: 1rem
+}
+
+.transaction{
+    flex: 50%;
+    width: 100%;
+}
+
+.transactionHeading h1{
+    color: var(--merch);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.transactionDetail{
+    width: 30rem;
+    height: 10rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    display: flex;
+    background-color: #2c2929;
+}
+
+.TDLeft img{
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+    border-radius: 0.2rem;
+    width: 6rem;
+    height: 9rem;
+    object-fit: cover
+}
+
+.TDLeft{
+    display: flex;
+}
+
+.TDTitle{
+    padding-top: 0.4rem
+}
+
+.TDetails{
+    margin-left: 1rem;
+}
+
+.TDetails h1{
+    font-size: 1.3rem;
+    color: var(--merch);
+    font-weight: bold
+}
+
+.TDetails h2{
+    font-size: 0.8rem;
+    color: var(--merch);
+    font-weight: bold
+}
+
+.TDetails p{
+    color: white;
+}
+
+.TDTotal{
+    position: relative;
+    top: 2.5rem;
+    left: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.TDRight img{
+    width: 5rem;
+    position: relative;
+    left: 7rem;
+    top: 2rem
+}
+
+.editContainer{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.formContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem
+}
+
+.formContainer input{
+    height: 2rem;
+    background-color: #2c2929;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 1rem
+}
+
+.formContainer select{
+    height: 2rem;
+    background-color: #2c2929;
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+.formContainer label{
+    width: 5.6rem;
+    font-size: 1rem
+}
+
+.formContainer label p{
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    background-color: #56C05A;
+}
+
+.formContainer label:hover{
+    cursor: pointer;
+}
+
+.editTitle{
+    font-size: 2rem
+}
+
+.formContainer button{
+    background-color:#56C05A;
+    border: none;
+    margin-top: 1rem
+}
+
+.formContainer button:hover{
+    background-color:#56C05A;
+}

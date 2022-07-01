@@ -1,0 +1,341 @@
+button{
+    border: none;
+}
+
+/* Login Page */
+
+.loginBg{
+    height: 100vh;
+}
+
+/* Login card */
+
+.loginContainer{
+    position: relative;
+    top: 20%;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.loginCard{
+    width: 80%;
+    flex: 40%;
+    border: none;
+    border-radius: 0.8rem;
+    margin: 0;
+    padding: 2rem;
+    background-color: #181818;
+    height: 25rem
+}
+
+.loginCard h1{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.loginCard .cardForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.loginCard .cardForm input{
+    border-radius: 0.5rem;
+    background-color:rgba(210, 210, 210, 0.25);
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: white;
+    border: 1px solid white;
+}
+
+.loginCard .cardForm button{
+    border-radius: 0.5rem;
+    background-color: #F74D4D;
+    color: white;
+    margin-top: 1.2rem
+}
+
+.loginCard .cardForm ::placeholder{
+    font-size: 1rem
+}
+
+
+/* x Login card */
+
+/* Login content */
+
+.loginContent{
+    flex:60%
+}
+
+.contentLogo img{
+    width: 50%;
+    margin-bottom: 2.8rem;
+}
+
+.contentHeading{
+    color: white;
+    word-spacing: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.contentHeading h1{
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.contentDesc{
+    width: 85%;
+    color: #6A6A6A;
+    word-wrap: wrap;
+}
+
+.contentDesc p{
+    font-size: 1rem;
+}
+
+.contentLogin{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.2rem 2rem;
+    border-radius: 0.4rem;
+    background-color: #F74D4D 
+}
+
+.contentRegister{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.2rem 2rem;
+    border-radius: 0.4rem;
+    background-color: black; 
+}
+
+@media only screen and (max-width: 320px){ 
+    .loginContainer{
+        position: relative;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loginContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contentHeading h1{
+        text-align: center
+    }
+
+    .contentLogo img{
+        position: relative;
+        left:27%;
+    }
+
+    .contentDesc p{
+        text-align: center;
+        position: relative;
+        left: 10%
+    }
+
+    .contentLogin{
+        position: absolute;
+        bottom: 5%;
+        left: 0%;
+        padding: 0.2rem 2rem;
+        font-size: 0.8rem
+    }
+
+    .contentRegister{
+        position: absolute;
+        bottom: 5%;
+        left: 53%;
+        padding: 0.2rem 1.6rem;
+        font-size: 0.8rem
+    }
+
+    .contentRegister:hover{
+        background-color: #F74D4D;
+    }
+
+    .loginCard{
+        width: 100%;
+        margin-bottom: 7rem;
+    }
+
+    .loginCard .cardForm {
+        gap: 1rem
+    }
+
+    .loginCard h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .loginCard .cardForm input{
+        height: 2rem
+
+    }
+
+    .loginCard .cardForm button{
+        height: 2.3rem;
+        font-size: 1rem 
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .loginContainer{
+        position: relative;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loginContent{
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contentHeading h1{
+        text-align: center;
+    }
+
+    .contentLogo img{
+        position: relative;
+        left:27%;
+    }
+
+    .contentDesc p{
+        text-align: center;
+        position: relative;
+        left: 10%
+    }
+
+    .contentLogin{
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        padding: 0.5rem 2.4rem;
+        font-size: 0.8rem
+    }
+
+    .contentRegister{
+        position: absolute;
+        bottom: 5%;
+        left: 52%;
+        padding: 0.5rem 2.4rem;
+        font-size: 0.8rem
+    }
+
+    .contentRegister:hover{
+        background-color: #F74D4D;
+    }
+
+    .loginCard{
+        margin-bottom: 7rem;
+    }
+
+    .loginCard .cardForm {
+        gap: 1rem
+    }
+
+    .loginCard h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .loginCard .cardForm input{
+        height: 2rem
+
+    }
+
+    .loginCard .cardForm button{
+        height: 2.3rem;
+        font-size: 1rem 
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    .loginContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loginContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contentHeading h1{
+        text-align: center
+    }
+
+    .contentLogo img{
+        position: relative;
+        left:27%;
+    }
+
+    .contentDesc p{
+        text-align: center;
+        position: relative;
+        left: 10%
+    }
+
+    .contentLogin{
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+        padding: 0.5rem 4.25rem;
+        font-size: 0.8rem
+    }
+
+    .contentRegister{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        padding: 0.5rem 4.25rem;
+        font-size: 0.8rem
+    }
+
+    .contentRegister:hover{
+        background-color: #F74D4D;
+    }
+
+    
+
+    .loginCard{
+        width: 70%;
+        margin-bottom: 7rem;
+    }
+
+    .loginCard .cardForm {
+        gap: 1rem;
+    }
+
+    .loginCard h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .loginCard .cardForm input{
+        height: 2rem;
+
+    }
+
+    .loginCard .cardForm button{
+        height: 2.3rem;
+        font-size: 1rem;
+        width: 50%;
+        position: relative;
+        left: 26%
+    }
+}
+
+/* -x- Login Content -x- */

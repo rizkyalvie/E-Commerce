@@ -1,0 +1,110 @@
+.Navbar{
+  background-color: black;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  padding-top: 2.5rem;
+  padding-right: 2.5rem
+}
+
+.Navbar .leftNav{
+  flex: 50%
+}
+
+.Navbar .leftNav img{
+  width: 4.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem
+}
+
+.Navbar .rightNav{
+  flex: 50%;
+}
+
+.Navbar .rightNav .conNav a{
+  color:red
+}
+
+.Navbar .rightNav .links{
+  display: flex;
+  max-height: 8vh;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Navbar .rightNav .links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem
+}
+
+.Navbar .rightNav .Bars{
+  color: white;
+  font-size: 1rem;
+  display: none;
+}
+
+.Navbar .rightNav .links:global(#hidden){
+  display: flex
+}
+
+.Navbar .rightNav button{
+  display: none;
+}
+
+.Navbar .rightNav .links a{
+  text-decoration: none;
+}
+
+a.active{
+  color: var(--merch);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+  .Navbar .rightNav .links p{
+    font-size: 0.9rem
+  }
+}
+
+@media only screen and (max-width: 480px){
+  
+
+  .Navbar .rightNav .Bars{
+    display: flex;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    font-size: 2rem;
+    cursor: pointer
+  }
+
+  .Navbar .rightNav button{
+    display: none;
+  }
+
+  .Navbar .rightNav .links{
+    display: none;
+  }
+
+  .Navbar .rightNav .links:global(#hidden){
+    position: absolute;
+    left: 0px;
+    top: 5rem;
+    justify-content: flex-start;
+    height: 15rem;
+    max-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .Navbar .rightNav #hidden p{
+    margin-top: 2rem;
+  }
+}
