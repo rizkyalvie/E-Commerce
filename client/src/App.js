@@ -35,7 +35,7 @@ function App() {
   const [state, dispatch] = useContext(UserContext);
   console.clear();
   
-  (state);
+  console.log(state);
 
   useEffect(() => {
     if (localStorage.token) {
@@ -71,7 +71,7 @@ function App() {
         payload,
       });
     } catch (error) {
-      (error);
+      console.log(error);
     }
   };
 

@@ -15,11 +15,11 @@ function Category() {
 
   let {data: category, isLoading} = useQuery('productData', async () => {
     const response = await API.get('/categories')
-    (response.data.data)
+    console.log(response.data.data)
     return response.data.data
   })
 
-  (isLoading)
+  console.log(isLoading)
 
   return (
     <div>

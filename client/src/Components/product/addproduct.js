@@ -34,7 +34,7 @@ function AddProduct() {
       const response = await API.get('/categories');
       setCategories(response.data.data);
     } catch (error) {
-      (error);
+      console.log(error);
     }
   };
   
@@ -88,11 +88,11 @@ function AddProduct() {
       formData.set('image', form.image[0], form.image[0].name);
       
       const response = await API.post('/addproduct', formData, config);
-      (response)
+      console.log(response)
   
       navigate('/product')
     } catch (error) {
-      (error);
+      console.log(error);
     }
   });
 

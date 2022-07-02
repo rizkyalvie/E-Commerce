@@ -15,7 +15,7 @@ function LoginCard() {
 
   const [state, dispatch] = useContext(UserContext);
 
-  (state)
+  console.log(state)
 
   const [message, setMessage] = useState(null);
 

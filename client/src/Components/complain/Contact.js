@@ -3,7 +3,7 @@ import "../../Css/complain.css"
 import blankPfp from '../../Images/blank-profile.png'
 
 export default function Contact({ dataContact, clickContact, contact }) {
-(dataContact)
+console.log(dataContact)
   return (
     <div className="mt-5">
       {dataContact.length > 0 && (

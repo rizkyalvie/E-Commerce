@@ -15,21 +15,21 @@ function Profile() {
 
   const [state] = useContext(UserContext);
 
-  (state.user)
+  console.log(state.user)
 
   let { data: profile } = useQuery('profileCache', async () => {
     const response = await API.get(`/profile/` + state.user.id);
-    (response.data)
+    console.log(response.data)
     return response.data.data;
   });
 
   let { data: transactions } = useQuery('transactionsCache', async () => {
     const response = await API.get('/transactions');
-    (response.data)
+    console.log(response.data)
     return response.data.data;
   });
 
-  const imgLink = 'http://localhost:5000/uploads/'
+  const imgLink = ''
 
   return (
     <div className={styles.Container}>
@@ -77,7 +77,7 @@ function Profile() {
                   fontWeight: 'bold'
                 }}>My Transaction</p>
                 {transactions?.map((item, index) => (
-                    <Card className='mb-2 history-card' key={index}>
+                    <Card className='mb-2 history-card' style={{backgroundColor: "#s1s1s1"}} key={index}>
                         <Row>
                             <Col sm={3}>
                                 <img src={imgLink + item.product.image} alt="" className="img-history" style={{width: '7.5rem', height: '11rem', objectFit:'cover', borderRadius:'0.2rem'}} />

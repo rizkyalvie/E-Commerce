@@ -25,7 +25,7 @@ function EditProfile() {
   
   let { data: profiles, refetch } = useQuery("profileCache", async () => {
     const response = await API.get(`/profile/` + state.user.id);
-    (response.data.data);
+    console.log(response.data.data);
     return response.data.data;
   });
 
@@ -48,7 +48,7 @@ function EditProfile() {
       [e.target.name]:
         e.target.type === "file" ? e.target.files : e.target.value,
     });
-    (form);
+    console.log(form);
     // Create image url for preview
     if (e.target.type === "file") {
       let url = URL.createObjectURL(e.target.files[0]);
@@ -73,12 +73,12 @@ function EditProfile() {
         formData,
         config
       );
-      (form);
-      (response.data);
+      console.log(form);
+      console.log(response.data);
 
       navigate("/profile");
     } catch (error) {
-      (error);
+      console.log(error);
     }
   });
 

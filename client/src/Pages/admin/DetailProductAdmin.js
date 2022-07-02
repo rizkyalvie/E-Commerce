@@ -12,7 +12,7 @@ function Detail() {
 
   let { data: product } = useQuery('productCache', async () => {
     const response = await API.get('/product/' + id);
-    (response.data.data)
+    console.log(response.data.data)
     return response.data.data.products;
   });
 
@@ -56,23 +56,23 @@ function Detail() {
 
       // Create variabel for store token payment from response here ...
       const token = response.data.payment.token
-      (token)
+      console.log(token)
 
       // Init Snap for display payment page with token here ...
       window.snap.pay(token, {
         onSuccess: function (result) {
           /* You may add your own implementation here */
-          (result);
+          console.log(result);
           history("/profile");
         },
         onPending: function (result) {
           /* You may add your own implementation here */
-          (result);
+          console.log(result);
           history("/profile");
         },
         onError: function (result) {
           /* You may add your own implementation here */
-          (result);
+          console.log(result);
         },
         onClose: function () {
           /* You may add your own implementation here */
@@ -80,7 +80,7 @@ function Detail() {
         },
       })
     } catch (error) {
-      (error);
+      console.log(error);
     }
   });
   return (

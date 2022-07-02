@@ -71,7 +71,7 @@ exports.register = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(401).send({
       status: "Failed",
       message: "Server Error",
@@ -146,7 +146,7 @@ exports.login = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(401).send({
       status: "Failed",
       message: "Server Error",
@@ -157,7 +157,7 @@ exports.login = async (req, res) => {
 exports.checkAuth = async (req, res) => {
   try {
     const id = req.user.id;
-    (id)
+    console.log(id)
 
     const dataUser = await user.findOne({
       where: {
@@ -186,7 +186,7 @@ exports.checkAuth = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status({
       status: "failed",
       message: "Server Error",

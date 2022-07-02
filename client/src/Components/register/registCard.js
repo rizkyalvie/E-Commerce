@@ -40,7 +40,7 @@ function RegistCard() {
       const body = JSON.stringify(form);   
 
       const response = await API.post('/register', body, config);
-      (response.data)
+      console.log(response.data)
 
       setMessage(null)
     } catch (error) {
@@ -59,7 +59,7 @@ function RegistCard() {
         }}>{error.response.data}</div>
       );
       setMessage(alert);
-      (error);
+      console.log(error);
     }
   });
 

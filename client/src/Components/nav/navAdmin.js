@@ -12,7 +12,7 @@ function Nav() {
   let navigate = useNavigate()
 
   const logout = () => {
-      (state)
+      console.log(state)
       dispatch({
           type: "LOGOUT"
       })

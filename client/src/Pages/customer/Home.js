@@ -12,11 +12,11 @@ function Home() {
 
   let {data: products, isLoading} = useQuery('productData', async () => {
     const response = await API.get('/products')
-    (response.data.data)
+    console.log(response.data.data)
     return response.data.data.products
   })
 
-  (isLoading)
+  console.log(isLoading)
   return (
     <div className={styles.homeBg}>
       <Navbar />

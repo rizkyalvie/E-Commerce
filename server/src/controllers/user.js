@@ -8,7 +8,7 @@ exports.addUser = async (req, res) => {
       message: "Add User Success",
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(401).send({
       status: "Failed",
       message: "Server Error",
@@ -63,7 +63,7 @@ exports.getUsers = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Failed",
       message: "Server Error",
@@ -86,7 +86,7 @@ exports.getUser = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Failed",
       message: "Server Error",
@@ -108,7 +108,7 @@ exports.updateUser = async (req, res) => {
       message: `Update User id: ${id} Success `,
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Failed",
       message: "Server Error",
@@ -130,7 +130,7 @@ exports.deleteUser = async (req, res) => {
       message: `Delete User id: ${id} Success `,
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Delete Failed",
       message: "Server Error",

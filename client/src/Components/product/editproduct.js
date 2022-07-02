@@ -29,7 +29,7 @@ function EditProduct() {
   // Fetching detail product data by id from database
 let { data: products, refetch } = useQuery('productCache', async () => {
   const response = await API.get('/product/' + id);
-  (response.data.data)
+  console.log(response.data.data)
   return response.data.data.products;
 });
 
@@ -124,11 +124,11 @@ const handleChangeCategoryId = (e) => {
         formData,
         config
       );
-      (response.data);
+      console.log(response.data);
   
       navigate('/home-admin');
     } catch (error) {
-      (error);
+      console.log(error);
     }
   });
 

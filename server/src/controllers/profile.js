@@ -32,7 +32,7 @@ exports.getProfile = async (req, res) => {
             data: profileData
         })
     } catch (error) {
-        (error)
+        console.log(error)
         res.send({
             status: 'failed',
             message: 'Server Error'
@@ -85,7 +85,7 @@ exports.updateProfile = async (req, res) => {
             data: { profileData, image: req?.file?.filename }
         })
     } catch (error) {
-        (error)
+        console.log(error)
         res.send({
             status: 'failed',
             message: 'Server Error'

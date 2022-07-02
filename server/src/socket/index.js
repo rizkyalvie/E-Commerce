@@ -19,7 +19,7 @@ const socketIo = (io) => {
   });
 
   io.on('connection', async (socket) => {
-    ('client connect: ', socket.id)
+    console.log('client connect: ', socket.id)
     
     // code here
     const { id: idUser } = jwt.verify(socket.handshake.auth.token, process.env.TOKEN_KEY)
@@ -48,7 +48,7 @@ const socketIo = (io) => {
     
         socket.emit("admin contact", adminContact)
       } catch (err) {
-        (err)
+        console.log(err)
       }
     })
 
@@ -101,7 +101,7 @@ const socketIo = (io) => {
         
         socket.emit("user contacts", userContacts)
       } catch (err) {
-        (err)
+        console.log(err)
       }
     })
 
@@ -157,12 +157,12 @@ const socketIo = (io) => {
         
         io.to(socket.id).to(connectedUser[idRecipient]).emit("new message")
       } catch (error) {
-        (error)
+        console.log(error)
       }
     })    
 
     socket.on("disconnect", () => {
-      ("client disconnected", socket.id)
+      console.log("client disconnected", socket.id)
       delete connectedUser[idUser]
     })
   })

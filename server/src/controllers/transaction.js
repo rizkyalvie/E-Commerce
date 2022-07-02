@@ -69,7 +69,7 @@ exports.buyProduct = async (req, res) => {
         },
       });
     } catch (error) {
-      (error);
+      console.log(error);
       res.send({
         status: "failed",
         message: "Server Error",
@@ -132,7 +132,7 @@ exports.getTransaction = async (req, res) => {
             data,
         })
     } catch (error) {
-        (error);
+        console.log(error);
         res.status(404).send({
             status: "Get data Transactions Failed",
             message: "Server Error",
@@ -186,7 +186,7 @@ exports.notification = async (req,res) => {
   
       
     } catch (error) {
-      (error)
+      console.log(error)
       res.send({
         message: 'Server Error'
       })

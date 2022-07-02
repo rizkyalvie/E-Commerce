@@ -33,11 +33,11 @@ function AddCategory() {
   
         // Insert category data
         const response = await API.post('/category', body, config);
-        (response)
+        console.log(response)
   
         navigate('/category');
       } catch (error) {
-        (error);
+        console.log(error);
       }
     });
 

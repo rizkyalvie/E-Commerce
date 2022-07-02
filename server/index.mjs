@@ -22,4 +22,4 @@ app.use(cors())
 app.use('/api/v1/', router)
 app.use('/uploads', express.static('uploads'))
 
-server.listen(port, (() => (`Listening on port ${port}`)))
+server.listen(port, (() => console.log(`Listening on port ${port}`)))

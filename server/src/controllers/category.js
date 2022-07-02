@@ -13,7 +13,7 @@ exports.getCategories = async (req, res) => {
       data,
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(500).send({
       status: "failed",
       message: "Server Error",
@@ -38,7 +38,7 @@ exports.getCategory = async (req, res) => {
       data,
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(500).send({
       status: "failed",
       message: "Server Error",
@@ -58,7 +58,7 @@ exports.addCategory = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(500).send({
       status: "failed",
       message: "Server Error",
@@ -85,7 +85,7 @@ exports.updateCategory = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(500).send({
       status: "failed",
       message: "Server Error",
@@ -114,7 +114,7 @@ exports.deleteCategory = async (req, res) => {
       message: `Delete category id: ${id} finished`,
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(500).send({
       status: "failed",
       message: "Server Error",

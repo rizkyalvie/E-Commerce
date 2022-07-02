@@ -47,7 +47,7 @@ exports.getProduct = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Get data Failed",
       message: "Server Error",
@@ -78,7 +78,7 @@ exports.addProduct = async (req, res) => {
       data: products,
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(500).send({
       status: "Add Product Failed",
       message: "Server Error",
@@ -134,7 +134,7 @@ exports.getDetailProduct = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Get detail data failed",
       message: "Server Error",
@@ -170,7 +170,7 @@ exports.updateProduct = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Updated product failed",
       message: "Server Error",
@@ -197,7 +197,7 @@ exports.deleteProduct = async (req, res) => {
       },
     });
   } catch (error) {
-    (error);
+    console.log(error);
     res.status(404).send({
       status: "Delete product failed",
       message: "Server Error",

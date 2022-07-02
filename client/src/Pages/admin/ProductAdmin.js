@@ -18,7 +18,7 @@ function Product() {
 
   let { data: products, refetch } = useQuery('productsCache', async () => {
     const response = await API.get('/products');
-    (response.data.data.products[0].image)
+    console.log(response.data.data.products[0].image)
     return response.data.data.products
   });
 
@@ -35,9 +35,9 @@ function Product() {
   const deleteById = useMutation(async (id) => {
     try {
       await API.delete(`/product/` + id);
-      (id)
+      console.log(id)
     } catch (error) {
-      (error);
+      console.log(error);
     }
   });
 

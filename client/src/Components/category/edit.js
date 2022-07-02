@@ -39,11 +39,11 @@ function EditCategory() {
         body,
         config
       );
-      (response);
+      console.log(response);
 
       navigate("/category");
     } catch (error) {
-      (error);
+      console.log(error);
     }
   });
   return (
